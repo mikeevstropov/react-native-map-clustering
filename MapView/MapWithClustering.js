@@ -62,7 +62,7 @@ export default class MapWithClustering extends Component {
             } else {
                 let newArray = [];
                 propsData.children.map((item) => {
-                    if (item.length === 0 || item.length === undefined) {
+                    if (item.length === undefined) {
                         newArray.push(item);
                     } else {
                         item.map((child) => {
